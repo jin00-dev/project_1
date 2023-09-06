@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>여진이의 시계</title>
+
+
+
+</head>
+<body>
+
+<!-- 내가해냄 이미지 삽입 -->
+<img src ="icandoit.png" alt="내가해냄" width="210" height="210">
+
+
+<!--  날짜, 시간 표현하는 시계 구현 -->
+<h1>현재시각</h1>
+<h1>
+<div id = "clock"> </div>
+<script src="clock.js">  </script>
+</h1>
+
+<!-- 입장 퇴장 버튼 구현 -->
+	<style>
+		#open{
+			width: 80%;
+			border:2px solid black;
+			background-color: #DC143C;
+			color:black;
+			padding:5px;
+			cursor:pointer;
+		}
+		#close{
+			width: 80%;
+			border:2px solid black;
+			background-color:#DAA520;
+			color:black;
+			padding:5px;
+			cursor:pointer;
+		}
+	</style>
+	
+	<table>
+	<tr>
+	<td width="200" height="100">
+	<button id=open type="button" onclick="doAction1()">입장</button>
+	</td>
+	<td width="200" height="100">
+	<button id=close type="button" onclick="doAction2(); ">퇴장</button>
+	</td>
+	</tr>
+	</table>
+	
+	<script type="text/javascript">
+		function doAction1(){
+			alert ("오늘도 화이팅");
+		}
+		function doAction2(){
+			alert ("비콘 찍고 집에가자!");
+		}
+		
+	</script>
+	
+	
+
+</body>
+</html>
